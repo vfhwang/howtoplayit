@@ -1,0 +1,29 @@
+---
+title: How to play it
+images:
+  - ???.jpg
+  - ….jpg
+  - parrot.gif
+---
+
+<!doctype html>
+<html>
+
+
+    <head><title>{{ title }}</title></head>
+
+
+    <body>
+      <h1>{{ title }}</h1>
+
+      <h2>Card games</h2>
+      <ul>{%- for post in collections.cards -%}
+        <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+        {%- endfor -%}
+      </ul>
+    
+    
+    </body>
+
+
+</html>
